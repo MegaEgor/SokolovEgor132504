@@ -4,9 +4,9 @@ while True:
     gradus = list(input("введите градусы"))
     i = 0
     
+    #проверка на корректность
     while i < (len(gradus)-1):
         if gradus[i] in numbers:
-            print(i)
             i += 1
             
         else:
@@ -19,8 +19,7 @@ while True:
         continue
     
     razdel = ["".join(gradus[:(len(gradus)-1)]), "".join(gradus[(len(gradus)-1):])]
-    print(razdel)
-    #проверка на корректность
+
     #перевод шкалы
     if razdel[1] == "F":
         print(str((float(razdel[0])-32.0)*(5/9))+"C")
