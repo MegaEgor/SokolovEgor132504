@@ -12,7 +12,7 @@ while True:
     if razdel[1] == "F":
         print(str((razdel[0]-32.0)*(5/9))+"C")
     elif razdel[1] == "C":
-        print(str((razdel[0]*(9/5))+32.0)+"C")
+        print(str((razdel[0]*(9/5))+32.0)+"F")
     else:
         print("Неверный ввод (Примеры правильного ввода: 23F, 65C)")
         continue
